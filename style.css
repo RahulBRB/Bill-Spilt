@@ -53,6 +53,16 @@ p{
     /* background-color: transparent; */
 }
 
+.bill-amount:disabled{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.currency:disabled{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
@@ -69,12 +79,28 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 12px;
 }
 
+.tip-container.disabled .tip{
+    background-color: grey;
+    outline: none;
+    cursor: not-allowed;
+}
+
+.tip-container.disabled{
+    opacity: 0.6;
+}
+
 .tip{
     background-color: #6f3cff;
     border-radius: 4px;
     padding: 10px;
     color: white;
     cursor: pointer;
+    font:inherit;
+    border: none;
+}
+
+.tip.selected{
+    outline: 4px solid orange;
 }
 
 .grey-input{
@@ -87,6 +113,9 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 4px;
 }
 
+.grey-input:disabled{
+    cursor: not-allowed;
+}
 
 .generate{
     width: 100%;
@@ -99,6 +128,11 @@ input[type=number]::-webkit-outer-spin-button {
     color: white;
     cursor: pointer;
     margin-top:18px;
+}
+
+.generate:disabled{
+    background-color: grey;
+    cursor: not-allowed;
 }
 
 /* Right Side */
@@ -129,10 +163,13 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 5px;
     font-size: 16px;
     width: 100%;
-    cursor: not-allowed;
+    cursor: pointer;
     font-family: inherit;
 }
 
+.reset-btn:disabled{
+    cursor: not-allowed;
+}
 
 /* Media Query*/
 @media screen and (max-width: 550px){

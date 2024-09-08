@@ -12,32 +12,32 @@
       <div class="bill-input">
         <p>Bill</p>
         <div class="input-container">
-            <span>₹</span>
+            <span class="currency">₹</span>
             <input class="bill-amount" type="number"/>
         </div>
 
         <p>Select Tip</p>
-        <div class="tip-container">
-           <div class="tip">5%</div>
-           <div class="tip">10%</div>
-           <div class="tip">15%</div>
-           <div class="tip">25%</div>
-           <div class="tip">50%</div>
-           <div class="tip">75%</div>
+        <div class="tip-container disabled">
+           <button class="tip">5%</button>
+           <button class="tip">10%</button>
+           <button class="tip">15%</button>
+           <button class="tip">25%</button>
+           <button class="tip">50%</button>
+           <button class="tip">75%</button>
         </div>
 
-        <input type="number" class="custom-tip grey-input" placeholder="Custom Tip %" />
+        <input type="number" class="custom-tip grey-input" placeholder="Custom Tip %" disabled/>
 
         <p>Number of People</p>
-        <input type="number" class="number-of-people grey-input" placeholder="No of People"  />
-        <button class="generate">Generate Bill</button>
+        <input type="number" class="number-of-people grey-input" placeholder="No of People" disabled />
+        <button class="generate" disabled>Generate Bill</button>
       </div>
 
       <div class="bill-output">
         <p class="tip-amount">Tip Amount <span></span></p>
         <p class="total">Total <span></span></p>
         <p class="each-person-bill">Each Person Bill <span></span></p>
-        <button class="reset-btn">Reset</button>
+        <button class="reset-btn" disabled>Reset</button>
       </div>
     </main>
   </body>
